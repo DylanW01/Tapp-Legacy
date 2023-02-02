@@ -387,8 +387,8 @@ session_start();
         <div class="col-sm-4 col-md-3 item">
           <h3>System Management</h3>
           <ul>
-            <li><a href="https://uogs.co.uk:8443/login_up.php">Server Login</a></li>
-            <li><a href="https://uogs.co.uk:8443/smb/database/list">Database Management</a></li>
+            <li><a href="https://hpanel.hostinger.com/hosting/dylanwarrell.com/advanced/git">Server Login</a></li>
+            <li><a href="https://hpanel.hostinger.com/hosting/dylanwarrell.com/redirect?l=phpMyAdmin&db_name=u539298194_Tapp">Database Management</a></li>
           </ul>
         </div>
         <div class="col-lg-3 item social"> <img src="/assets/images/logo/tapp-logos_black_icon.png" width="15%">
