@@ -7,7 +7,7 @@ $('#formUserLogin').submit(function (event) {
 
   $.ajax({
       type: "POST",
-      url: "/src/db.php",
+      url: "../../../SecretStuff/db.php",
       data: formData + "&phpFunction=login",
       datatype: 'json',
       success: function (msg) {
@@ -16,17 +16,16 @@ $('#formUserLogin').submit(function (event) {
           $("#divMessage").html("Wrong username/password");
         } else {
           $("#divMessage").html("Logging in");
-//          firstName = dataJson['Forename'];
-//          lastName = dataJson['Surname'];
-//          email = dataJson['email'];
-//          accountType = dataJson['AccountType'];
-//          sessionStorage.setItem('First_Name', lastName);
-//          sessionStorage.setItem('Last_Name', lastName);
-//          sessionStorage.setItem('email', email);
-//          sessionStorage.setItem('Administator', admin);
+          firstName = dataJson['Forename'];
+          lastName = dataJson['Surname'];
+          email = dataJson['email'];
+          accountType = dataJson['AccountType'];
+          sessionStorage.setItem('First_Name', lastName);
+          sessionStorage.setItem('Last_Name', lastName);
+          sessionStorage.setItem('email', email);
+          sessionStorage.setItem('Administator', admin);
           location.href = "admindashboard.html";
         }
       }
-    }
-  });
+    });
 });
