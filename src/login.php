@@ -1,7 +1,7 @@
 <?php
 // ensure user arrives on page legally
 if (isset($_POST['login'])) {
-    require "../../../SecretStuff/db.php";
+    require "../../../../SecretStuff/db.php";
 
     // init vars
     $email = $_POST['email'];
